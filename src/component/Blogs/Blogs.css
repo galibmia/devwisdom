@@ -13,12 +13,12 @@
     font-size: 20px;
 }
 
-.blog-container {
+/* .blog-container {
     padding: 20px;
     background-color: #f0f0f0;
     box-shadow: 0 4px 8px 0 rgba(110, 110, 110, 0.2), 0 6px 20px 0 rgba(76, 76, 76, 0.19);
     border-radius: 10px;
-}
+} */
 
 .btn-clear {
     margin-top: 50px;
@@ -38,4 +38,12 @@
     background-color: rgb(255, 0, 0);
     box-shadow: 0 4px 8px 8px rgba(68, 68, 68, 0.2), 5px 6px 20px 0 rgba(13, 13, 13, 0.19);
     cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+    .blogs-container {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }

@@ -1,0 +1,8 @@
+.knowledge-container {
+    max-width: 73%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px 0 rgba(181, 181, 181, 0.2), 0 6px 20px 0 rgba(192, 190, 190, 0.19);
+    border-radius: 10px;
+}
