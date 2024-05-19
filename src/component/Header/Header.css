@@ -1,0 +1,28 @@
+.header {
+    background-color: #f0f0f0;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(110, 110, 110, 0.2), 0 6px 20px 0 rgba(76, 76, 76, 0.19);
+}
+
+.header-title {
+    color: #111;
+    font-family: "Exo 2";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.header-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+}

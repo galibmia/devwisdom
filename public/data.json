@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "title": "4 Coding Projects to Build your Developer Portfolio",
+        "author": "Fahim ul Haque",
+        "authorImg": "https://bpb-us-w2.wpmucdn.com/campuspress.yale.edu/dist/6/1452/files/2016/02/cropped-Website-Placeholder-Male-JPG-1d58sgj.jpg",
+        "description": "A developer’s job is to build. We build applications, products, and services… and then we iterate upon them. Our projects at work never stop evolving, and neither should we. We learn a lot through the projects we take on at work — but is there also value in taking on personal projects? The answer is YES. As a tried-and-true way to build and practice new skills, personal projects are essential for future-proofing any developer’s career. In today’s competitive job market, projects are a great way to demonstrate your abilities and stand out from the competition. Whether you’re showcasing your new skills or interests, projects lead to tangible products you can add to your portfolio and share with other devs and future employers. Sure, you can come out of jobs, courses, or bootcamps with completed projects to show for it, but personal projects are necessary to prove you have the drive to commit, upskill and build an end-to-end development task. Today, I’ll share how you can get started with projects. Then I’ll share some of my favorite Projects on the Educative platform and how you can take advantage of them.",
+        "banner": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*sIvH_DytX3Gx00iKxaHvLQ.png",
+        "publishDate": "14/05/2024",
+        "readingTime": 5,
+        "tags": "#portfolio #programming"
+    },
+    {
+        "id": 2,
+        "title": "Do You Really Understand the useState Hook? Try This Question.",
+        "author": "Sadia Meem",
+        "authorImg": "https://scontent.fjsr6-1.fna.fbcdn.net/v/t39.30808-6/430795753_3861963904032820_7209781328488363020_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGGW0ig3xfFiBHEg66fR-wMMl66iQTTNZEyXrqJBNM1kf1FXMLvljbH6wQFmuAdxN4eVjecSXLbAK6uep5bZImE&_nc_ohc=EppqDJw5TYQQ7kNvgHmDr_F&_nc_ht=scontent.fjsr6-1.fna&oh=00_AYCSekHBP6nGi20XYMpFVQkugl-ZfEIW-FiXt1wbihpxOQ&oe=664F1C49",
+        "description": "The `useState` hook in React is a fundamental tool for managing state in functional components, marking a significant shift from the traditional class-based components. This hook allows developers to declare state variables directly within functional components, thereby simplifying state management and making components more readable and concise. When `useState` is called, it returns an array with two elements: the current state value and a function to update that state. This pattern follows a simple syntax, such as `[count, setCount] = useState(0)`, where `count` is the state variable initialized to `0`, and `setCount` is the function used to update `count`. The state setter function provided by `useState` replaces the existing state rather than merging it, which is a crucial difference from the `this.setState` method in class components. This behavior necessitates careful handling when working with complex state objects or arrays, often requiring the use of the spread operator to maintain immutability and ensure all parts of the state are preserved. For instance, updating a specific property of an object state involves spreading the previous state and then updating the desired property: `setUser(prevUser => ({ ...prevUser, name: 'Bob' }))`. Moreover, `useState` offers a feature known as lazy initialization, where the initial state can be set using a function. This function is executed only during the initial render, which can be particularly beneficial when the initial state is the result of an expensive computation. For example, `const [items, setItems] = useState(() => computeExpensiveValue())` ensures that the expensive computation is not repeated on every render, enhancing performance. State updates using `useState` can also be made based on the previous state, which is particularly useful for operations like incrementing a counter. By passing a function to the state setter, you ensure that the update is based on the latest state value: `setCount(prevCount => prevCount + 1)`. This method is essential in scenarios where state updates are queued, ensuring that each update correctly reflects the most current state. Understanding these nuances of the `useState` hook is essential for effectively managing state in React functional components. By leveraging the power of `useState`, developers can write more predictable, maintainable, and efficient React applications, taking full advantage of functional programming paradigms and React's reactivity.",
+        "banner": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*ACt4eKk0eg928l1jQj_cBQ.jpeg",
+        "publishDate": "10/05/2024",
+        "readingTime": 6,
+        "tags": "#react #hook"
+    },
+    {
+        "id": 3,
+        "title": "React — Naming Convention for Props (in/out) and State",
+        "author": "Galib Mia",
+        "authorImg": "https://bpb-us-w2.wpmucdn.com/campuspress.yale.edu/dist/6/1452/files/2016/02/cropped-Website-Placeholder-Male-JPG-1d58sgj.jpg",
+        "description": "In React development, maintaining a clear and consistent naming convention for props and state is crucial for readability and maintainability. Props, which are used to pass data from parent to child components, should typically be named descriptively and in camelCase, such as `userName` or `isLoggedIn`. When dealing with functions passed as props, it's common to prefix them with `on` or `handle`, such as `onClick` or `handleSubmit`, to denote they are event handlers. For state variables, the convention is also to use camelCase and to be descriptive of their purpose, like `isModalOpen` or `inputValue`. When using the `useState` hook, it's helpful to name the state setter functions with a prefix of `set`, corresponding to the state variable, for example, `[isModalOpen, setIsModalOpen]`. This systematic approach to naming helps to intuitively understand the data flow and logic within the components, making the codebase easier to navigate and maintain.",
+        "banner": "https://img.freepik.com/free-vector/static-assets-concept-illustration_114360-4778.jpg?t=st=1716082000~exp=1716085600~hmac=298f34a7527b2ea197a87ebbd04a1cd6e6d2c4d0a0c3df9bb80b034911602aac&w=1380",
+        "publishDate": "12/05/2024",
+        "readingTime": 4,
+        "tags": "#useState #react"
+    },
+    {
+        "id": 4,
+        "title": "15 Time-Saving Websites You Should Know As A CSS Developer",
+        "author": "Sakila",
+        "authorImg": "https://kripalu.org/sites/default/files/styles/headshot_large/public/DrShefali_2022.jpg?itok=lpTQa_sN",
+        "description": "As a CSS developer, efficiency is key, and there are numerous websites that can significantly streamline your workflow. Some essential ones include **CSS-Tricks**, which offers a wealth of articles, tutorials, and code snippets; **Can I Use**, a vital resource for checking browser compatibility; and **Flexbox Froggy**, a fun and interactive way to master Flexbox. **CSS Grid Garden** provides a similar experience for learning CSS Grid. **Autoprefixer** helps you add necessary vendor prefixes automatically, saving time on cross-browser compatibility. **CodePen** and **JSFiddle** are invaluable for quickly testing and sharing your code snippets. **SassMeister** is perfect for those who use Sass, providing a live compiler to see your Sass turn into CSS in real-time. **Animate.css** offers ready-to-use animations, while **Clippy** generates clip-path values for complex shapes. **CSS Validator** helps ensure your code is error-free, and **ColorZilla** is great for color picking and gradient generation. **CSS Grid Generator** and **Flexbox Playground** allow you to visually design layouts without writing code from scratch. Finally, **Keyframes.app** helps you create and visualize keyframe animations, making it easier to implement complex animations in your projects. These tools can drastically reduce development time and enhance your productivity.",
+        "banner": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*y_sdDHaT_Udr7kW1gITaug.png",
+        "publishDate": "13/05/2024",
+        "readingTime": 6,
+        "tags": "#CSS #developer"
+    }
+]
