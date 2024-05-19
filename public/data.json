@@ -25,7 +25,7 @@
         "id": 3,
         "title": "React — Naming Convention for Props (in/out) and State",
         "author": "Galib Mia",
-        "authorImg": "https://bpb-us-w2.wpmucdn.com/campuspress.yale.edu/dist/6/1452/files/2016/02/cropped-Website-Placeholder-Male-JPG-1d58sgj.jpg",
+        "authorImg": "https://galibmia.com.bd/assets/profile-8fc691d4.png",
         "description": "In React development, maintaining a clear and consistent naming convention for props and state is crucial for readability and maintainability. Props, which are used to pass data from parent to child components, should typically be named descriptively and in camelCase, such as `userName` or `isLoggedIn`. When dealing with functions passed as props, it's common to prefix them with `on` or `handle`, such as `onClick` or `handleSubmit`, to denote they are event handlers. For state variables, the convention is also to use camelCase and to be descriptive of their purpose, like `isModalOpen` or `inputValue`. When using the `useState` hook, it's helpful to name the state setter functions with a prefix of `set`, corresponding to the state variable, for example, `[isModalOpen, setIsModalOpen]`. This systematic approach to naming helps to intuitively understand the data flow and logic within the components, making the codebase easier to navigate and maintain.",
         "banner": "https://img.freepik.com/free-vector/static-assets-concept-illustration_114360-4778.jpg?t=st=1716082000~exp=1716085600~hmac=298f34a7527b2ea197a87ebbd04a1cd6e6d2c4d0a0c3df9bb80b034911602aac&w=1380",
         "publishDate": "12/05/2024",
