@@ -1,11 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Blog.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
+import { toast } from 'react-toastify';
 
 const Blog = ({ blog }) => {
-    const { title, author, authorImg, banner, publishDate, readingTime, tags } = blog;
-    console.log(banner)
+    const { id, title, author, authorImg, banner, publishDate, readingTime, tags } = blog;
+    const addToBookmark = (ids) => {
+        const value = localStorage.getItem(title);
+        if( parseInt(value) !== ids){
+            console.log(value, ids)
+            localStorage.setItem(title, ids);
+            toast.success('Added to Bookmark',{
+                position: "top-right",
+                autoClose: 1000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                });
+                
+            setTimeout(()=>{
+                window.location.reload();
+            },1001);
+        }
+        else{
+            toast.warn('Already Exist',{
+                position: "top-right",
+                autoClose: 1000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                });
+        }
+        
+    }
 
     return (
         <div className='blog'>
@@ -19,7 +53,7 @@ const Blog = ({ blog }) => {
                     </div>
                 </div>
                 <div>
-                    <p className='reading-time'>{readingTime} min read <button className='btn-bookmark'><FontAwesomeIcon icon={faBookmark} /></button></p>
+                    <p className='reading-time'>{readingTime} min read <button onClick={() => {addToBookmark(id)}}  className='btn-bookmark'><FontAwesomeIcon icon={faBookmark} /></button></p>
                 </div>
             </div>
             <div>
