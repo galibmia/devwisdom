@@ -10,6 +10,7 @@
 
 .read-time {
     color: #6047EC;
+    font-size: 20px;
 }
 
 .blog-container {
@@ -37,7 +38,4 @@
     background-color: rgb(255, 0, 0);
     box-shadow: 0 4px 8px 8px rgba(68, 68, 68, 0.2), 5px 6px 20px 0 rgba(13, 13, 13, 0.19);
     cursor: pointer;
-}
-.d-none{
-    display: none;
 }
